@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-
+/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+
+        li {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        button {
+            padding: 30px 20px 30px 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Lista de Nomes</h1></div>
+    <div>
+        <ul style="font-size: 35px;">
+            <li>Maria</li>
+            <li>Silva</li>
+            <li>Nicolas</li>
+            <li>Gustavo</li>
+            <li>Romeiro</li>
+        </ul>
+    </div>
+    <div>
+        <button id="btn">Click aqui</button>
+    </div>
+    
+    <script>
+        $('#btn').on("click",botao) // Ao clicar no botão a lista ficara azul
+        function botao(){
+        $('li').css({'color':'red'})
+        }
+        </script>
+</body>
+</html>
